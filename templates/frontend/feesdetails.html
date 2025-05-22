@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+    <style>
+        .newhodbrndp{
+    background-image:url("{% static 'IMAGES/104.jpg' %}");
+    background-size:cover;
+}
+        
+    </style>
+</head>
+<body class="newhodbrndp">
+    <div class="students">
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>{{form123.as_table}}</td>
+            </tr>
+        </table>
+        <button class="btn btn-success" style="border-radius: 15px;">SUBMIT</button>
+    </form>
+    </div>
+    <br>
+    <table border="2" style="margin-left:350px;width:600px; text-align: center;">
+        <tr>
+            <th>Select_Department</th>
+            <th>Department_Fees</th>
+            <th>EDIT</th>
+        </tr>
+        {% for x in data10 %}
+        <tr>
+            <td>{{ x.Select_Department }}</td>
+            <td>{{ x.Department_Fees }}</td>
+            <td class="main"><a href="{% url 'feesedit' x.id %}" style="text-decoration:none;color: white;" >EDIT</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'home' %}"><button style="margin-left:630px; border-radius:15px;">Back</button></a>
+</body>
+</html>

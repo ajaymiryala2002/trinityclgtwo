@@ -1,0 +1,123 @@
+.students{
+    border:2px solid green;
+    width:45%;
+    height:250px;
+    margin-left:350px;
+    margin-top:10px;
+    /* background-image:linear-gradient(to top,rgba(255, 0, 0, 0.591),green); */
+    border-radius:20px;
+    text-align: center;
+    color: black;
+    padding-left:50px;
+
+    
+
+}
+input[type=text],input[type=email],input[type=number]{
+    width:350px;
+    height:40px;
+    border-radius:20px;
+    border-bottom:solid black;
+    margin-top: 10px;
+    text-align: center;
+    margin-top:5px;
+}
+select[type=option]{
+    width:350px;
+    height:40px;
+    border-radius:20px;
+    border-bottom:solid black;
+    margin-top: 10px;
+    text-align: center;
+    margin-top:5px;
+
+}
+select {
+    width: 350px; /* Set width of the select box */
+    height:40px;
+    border-radius:20px;
+    border-bottom:solid black;
+    margin-top: 10px;
+    text-align: center;
+    margin-top:5px;
+  }
+input[type=submit]{
+    width:100px;
+    background-color:green;
+    margin-top:10px;
+    border-radius:10px;
+
+
+}
+input[type=text]{
+    width:350px;
+    height:40px;
+    border-radius:20px;
+ 
+    text-align: center;
+    margin-top:5px;
+
+}
+button{
+    width:100px;
+    height:40px;
+    background-color:greenyellow;
+    margin-top:5px;
+
+}
+.students1{
+    border:1px solid green;
+    width:50%;
+    height:450px;
+    margin-left:300px;
+    margin-top:10px;
+    /* background-image:linear-gradient(to top,blue,white); */
+    border-radius:20px;
+    /* text-align: center; */
+    padding-left:50px;
+    padding-top:20px;
+}
+.body2{
+    background-image: url("{% static 'IMAGES/101.jpg' %}");
+    background-size: cover;
+
+}
+.bodystudent{
+    background-image: url("{% static 'IMAGES/105.jpg' %}");
+    background-size: cover;
+}
+.studentsedit{
+    border:2px solid green;
+    width:50%;
+    height:450px;
+    margin-left:350px;
+    margin-top:10px;
+    border-radius:20px;
+    color:white;
+    padding-left:50px;
+
+}
+.studentseditimage{
+    background-image: url("{% static 'IMAGES/103.jpg' %}");
+    background-size: cover;
+}
+.newhodbrndp{
+    background-image:url("{% static 'IMAGES/104.jpg' %}");
+    background-size:cover;
+}
+.main{
+    border:2px solid orange;
+    width:15px;
+    height:1rem;
+    color: white;
+    background-color:orange;
+    text-decoration:none;
+    
+}
+.stdedit{
+    border: 0px solid green;
+    width:45%;
+    height:450px;
+    margin-left:350px;
+    text-align: center;
+}

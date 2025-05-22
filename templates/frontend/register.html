@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/registation.css' %}">
+    <style>
+        .registerpage{
+            /* background-image: url("{% static 'IMAGES/120.jpg' %}"); */
+            background-size: cover;
+        }
+        .body1{
+        background-image:url("{% static 'IMAGES/104.jpg' %}");
+        background-size: cover;
+}
+
+    </style>
+</head>
+<body class="body1">
+    <a href="{% url 'login' %}"><button style="width:5rem; height:2rem;margin-left:1100px;background-color: blue;color: aliceblue;border-radius: 10px;">Login</button></a>
+    <div class="registerpage">
+    <p>{{message}}</p>
+    <form method="post">
+        {% csrf_token %}
+        <h1 style="text-align: center;">Register</h1>
+        <table>
+            <tr>        
+                <td><b><label style="margin-left:90px;">username:</label></b></td>
+                <td><input type="text" name="username" placeholder="username"></td>
+            </tr>
+            <tr>
+            <td><b><label style="margin-left:90px;" >Email:</label></b></td>
+            <td><input type="email" name="email" placeholder="Emial"></td>
+            </tr>
+            <tr>
+                <td><b><label style="margin-left:90px;">Mobile:</label></b></td>
+                  <td><input type="text" name="mobile" placeholder="Mobile_Number" title="Mobile number pattern" pattern="[6-9]{1}[0-9]{9}"></td>
+            </tr>
+            <tr>
+                <td><b><label style="margin-left:90px;">Password:</label></b></td>
+                <td><input type="password" name="password" placeholder="password"></td>
+            </tr>
+            <tr>
+                <td><b><label style="margin-left:90px;">Con_password:</label></b></td>
+                <td><input type="password" name="con_password" placeholder="con_password"></td>
+            </tr>
+        </table>
+        <button type="submit">Register</button>
+
+    </form>
+    </div>
+</body>
+</html>

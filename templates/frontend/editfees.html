@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+    <style>
+        .newhodbrndp{
+    background-image:url("{% static 'IMAGES/104.jpg' %}");
+    background-size:cover;
+}
+        
+    </style>
+</head>
+<body class="newhodbrndp">
+    <div class="students">
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <td>{{form120.as_table}}</td>
+        </table>
+        <button type="submit" style="border-radius: 15px;">SUBMIT</button>
+    </form>
+    </div>
+    <a href="{% url 'fees_details' %}"><button style="border-radius:15px;margin-left:600px;">Back</button></a>
+</body>
+</html>

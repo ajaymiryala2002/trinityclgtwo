@@ -1,0 +1,49 @@
+.registerpage{
+    border:0px solid green;
+    width:50%;
+    height:450px;
+    margin-left:300px;
+    margin-top:30px;
+    /* background-image: url("{% static 'IMAGES/120.jpg' %}"); */
+    background-size: cover;
+    border-radius: 10px;
+    color: black;
+    /* text-align: center; */
+
+
+   
+}
+input[type=password]{
+    width:290px;
+    height:30px;
+    margin-top:10px;
+    /* margin-left:200px; */
+    
+    border-radius: 10px;
+    
+}
+button[type=submit]{
+    width:80px;
+    height:35px;
+    margin-left:250px;
+    margin-top:20px;
+    border-radius:10px;
+    background-color:blue;
+    color:aliceblue
+
+}
+input[type=text],input[type=email]{
+    width:290px;
+    height:30px;
+    margin-top:10px;
+    
+    border-radius: 10px;
+    
+}
+.body1{
+    background-image:url("{% static 'IMAGES/104.jpg' %}");
+    background-size: cover;
+    position: relative;
+
+}
+

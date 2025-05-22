@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+    <style>
+        .studentseditimage{
+    background-image: url("{% static 'IMAGES/103.jpg' %}");
+    background-size: cover;
+}
+
+    </style>
+</head>
+<body class="studentseditimage">
+    <div class="stdedit">
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>{{ form.as_table }}</td>
+            </tr>
+
+        </table>
+        <button type="submit" style="border-radius: 10px;">Submit</button><br>
+        <a href="{% url 'new_student'%}"><button style="background-color: orange;border-radius:10px;margin-top:150px;">Back </button></a>
+    </form>
+    </div>
+    
+</body>
+</html>
